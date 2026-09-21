@@ -1,0 +1,63 @@
+html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 - Versión 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <header>
+            <div>
+                <h1>2048</h1>
+                <p>Une los números y llega hasta 2048</p>
+            </div>
+
+            <div class="puntuacion">
+                <span>PUNTUACIÓN</span>
+                <strong id="score">0</strong>
+            </div>
+        </header>
+
+        <section class="informacion">
+            <p>
+                Usa las teclas <strong>↑ ↓ ← →</strong> para mover las fichas.
+            </p>
+
+            <button id="nuevo-juego">Nuevo juego</button>
+        </section>
+
+        <div id="tablero" class="tablero"></div>
+
+        <div id="mensaje" class="mensaje oculto">
+            <h2>¡Fin del juego!</h2>
+            <button id="intentar-nuevamente">
+                Intentar nuevamente
+            </button>
+        </div>
+
+        <section class="instrucciones">
+            <h2>¿Cómo jugar?</h2>
+
+            <p>
+                Utiliza las flechas del teclado para mover las fichas.
+                Cuando dos fichas con el mismo número se encuentran,
+                se combinan en una sola.
+            </p>
+
+            <p>
+                El objetivo es conseguir la ficha <strong>2048</strong>.
+            </p>
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+css
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #faf8ef;
+    color: #776e65;
+    min-height: 100vh;
+}
+
+.contenedor {
+    width: 500px;
+    max-width: 95%;
+    margin: 40px auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 70px;
+    color: #776e65;
+}
+
+header p {
+    font-size: 16px;
+    margin-top: -10px;
+}
+
+.puntuacion {
+    background-color: #bbada0;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 100px;
+}
+
+.puntuacion span {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.puntuacion strong {
+    font-size: 28px;
+}
+
+.informacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.informacion p {
+    font-size: 15px;
+}
+
+button {
+    border: none;
+    background-color: #8f7a66;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #776e65;
+}
+
+.tablero {
+    background-color: #bbada0;
+    border-radius: 6px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    position: relative;
+}
+
+.casilla {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: #cdc1b4;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 35px;
+    font-weight: bold;
+    color: #776e65;
+}
+
+.numero-2 {
+    background-color: #eee4da;
+}
+
+.numero-4 {
+    background-color: #ede0c8;
+}
+
+.numero-8 {
+    background-color: #f2b179;
+    color: white;
+}
+
+.numero-16 {
+    background-color: #f59563;
+    color: white;
+}
+
+.numero-32 {
+    background-color: #f67c5f;
+    color: white;
+}
+
+.numero-64 {
+    background-color: #f65e3b;
+    color: white;
+}
+
+.numero-128 {
+    background-color: #edcf72;
+    color: white;
+    font-size: 30px;
+}
+
+.numero-256 {
+    background-color: #edcc61;
+    color: white;
+    font-size: 30px;
+}
+
+.numero-512 {
+    background-color: #edc850;
+    color: white;
+    font-size: 30px;
+}
+
+.numero-1024 {
+    background-color: #edc53f;
+    color: white;
+    font-size: 25px;
+}
+
+.numero-2048 {
+    background-color: #edc22e;
+    color: white;
+    font-size: 25px;
+}
+
+.mensaje {
+    background-color: rgba(238, 228, 218, 0.95);
+    padding: 25px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.mensaje h2 {
+    margin-bottom: 15px;
+}
+
+.oculto {
+    display: none;
+}
+
+.instrucciones {
+    margin-top: 25px;
+    line-height: 1.6;
+}
+
+.instrucciones h2 {
+    margin-bottom: 8px;
+}
+
+.instrucciones p {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 550px) {
+
+    .contenedor {
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .casilla {
+        font-size: 25px;
+    }
+
+    .numero-128,
+    .numero-256,
+    .numero-512 {
+        font-size: 22px;
+    }
+
+    .numero-1024,
+    .numero-2048 {
+        font-size: 18px;
+    }
+}
